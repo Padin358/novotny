@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+  </head>
+  <body class="bg-[#000e21] text-[#edf6ff]">
+    <header class="">
+            <nav class="flex flex-row flex-wrap gap-1 text-2xl 3xl:text-3xl my-2 justify-center w-full">
+              <a href="index.html" class="font-fira-sans after:block after:origin-bottom-left after:scale-x-0 after:border-b-2 after:border-b-text
+              after:transition-all after:hover:scale-x-100 cursor-pointer px-2 py-1 mx-5">Úvod</a>
+              <a href="materialy.html" class="font-fira-sans after:block after:origin-bottom-left after:scale-x-0 after:border-b-2 after:border-b-text
+              after:transition-all after:hover:scale-x-100 cursor-pointer px-2 py-1 mx-5">Materiály</a>
+              <a href="kontakt.html" class="font-fira-sans after:block after:origin-bottom-left after:scale-x-0 after:border-b-2 after:border-b-text
+              after:transition-all after:hover:scale-x-100 cursor-pointer px-2 py-1 mx-5">Kontakt</a>
+              <a href="" class="font-fira-sans after:block after:origin-bottom-left after:scale-x-0 after:border-b-2 after:border-b-text
+              after:transition-all after:hover:scale-x-100 cursor-pointer px-2 py-1 mx-5">Info</a>
+              <a href="" class="font-fira-sans after:block after:origin-bottom-left after:scale-x-0 after:border-b-2 after:border-b-text
+              after:transition-all after:hover:scale-x-100 cursor-pointer px-2 py-1 mx-5">Galerie</a>
+              <img class="w-10 h-10 ml-16 invisible lg:visible" src="https://www.mgrpetrnovotny.eu/obrazek/3/11zon-cropped-6-png/">
+            </nav>
+        </header>
+        <div class="border-b border-b-neutral-400"></div>
+    <main>
+        <section class="" id="heading">
+            <h1 class="text-4xl font-semibold font-mono text-center mt-20">Galerie</h1>
+            <div class="border-b border-b-gray-700 mx-[600px] my-10"></div>
+        </section>
+        <section class="" id="middle">
+            <h2 class="text-2xl font-semibold mt-24 mb-10 text-center">Hardware</h2>
+            <div class="flex flex-row flex-wrap justify-center gap-10">
+                <div class="">
+                    <button class="bg-gray-900 p-5 rounded-2xl border-2 border-gray-800 cursor-pointer hover:bg-gray-800 transition-all hover:border-gray-700 hover:shadow-2xl shadow-blue-950" onclick="cpuBtn()">
+                        <p class="">Procesor / CPU</p>
+                        <p class="">Srdce počítače, atd..</p>
+                        <img src="public/img/cpu.png" alt="" class="hidden w-[200px] rotate-x-30 rotate-z-30" id="cpuImg">
+                    </button>
+                </div>
+                <div class="">
+                        <button class="bg-gray-900 p-5 rounded-2xl border-2 border-gray-800 cursor-pointer hover:bg-gray-800 transition-all hover:border-gray-700 hover:shadow-2xl shadow-blue-950" onclick="gpuBtn()">
+                            <p class="">Grafická karta / GPU</p>
+                            <p class="">Render grafiky, ...</p>
+                            <img src="public/img/gpu.png" alt="" class="hidden w-[200px] rotate-x-30 rotate-z-30" id="gpuImg">
+                        </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fixed bottom-0 left-0 text-center w-[100%]">
+      <p class="" id="visitCounter">Počet návštěv: 0</p>
+      <p class="p-3 bg-[#000e21]"><strong class="font-semibold">© 2025 | Mgr. Petr Novotný</strong><strong class="font-semibold ml-10">Website created by Radim Vopelka with 💙</strong></p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="images.js"></script>
+  </body>
+</html>
